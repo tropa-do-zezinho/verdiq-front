@@ -1,0 +1,38 @@
+:root {
+  --color-leaf: #1f4d3a;
+  --color-leaf-deep: #143528;
+  --color-leaf-soft: #2f6b50;
+  --color-sprout: #c6e27a;
+  --color-soil: #5c3a21;
+  --color-clay: #a86b3c;
+  --color-sun: #e8a54b;
+  --color-cream: #f3efe6;
+  --color-paper: #faf7f1;
+  --color-ink: #1a1814;
+  --color-muted: #5e574c;
+  --color-line: #ddd4c5;
+  --color-danger: #a33b2b;
+  --color-ok: #2a7a4b;
+  --color-warn: #b7791f;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Source Sans 3", system-ui, sans-serif;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  --shadow-soft: 0 2px 8px rgba(26, 24, 20, 0.06);
+  --shadow-card: none;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-8: 3rem;
+
+  --max: 1120px;
+  --nav-h: 4rem;
+}
