@@ -2,7 +2,17 @@
 
 SPA React (Vite + TypeScript) do calendário de safra FLV. Consome a API em `http://localhost:8080`.
 
-## Subir
+## Docker (deploy)
+
+```bash
+cd front
+docker build --build-arg VITE_API_URL=https://SUA-API.up.railway.app -t verdiq-front .
+docker run --rm -p 8080:80 -e PORT=80 verdiq-front
+```
+
+No Railway: builder **Dockerfile**, root `front`. Build arg / variável de build `VITE_API_URL` = URL pública da API (sem `/` no final). Start command: deixe vazio (nginx). A imagem escuta `PORT` (default 80).
+
+## Subir local
 
 ```bash
 # API (outro terminal) — exporte ORACLE_* (ver back/.env.example)
