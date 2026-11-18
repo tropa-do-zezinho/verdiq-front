@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import type { FormEvent } from 'react'
+import { useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { ApiError } from '../api/client'
 import { useAuth } from '../auth/AuthContext'
@@ -33,10 +33,6 @@ export function LoginPage() {
   return (
     <div className="container page-title" style={{ maxWidth: 480 }}>
       <h1>Entrar</h1>
-      <p>
-        Seed: <code>marta@naepoca.local</code> / <code>ana@naepoca.local</code> /{' '}
-        <code>admin@naepoca.local</code> — senha <code>Senha@123</code>
-      </p>
       {error && <div className="alert alert-error">{error}</div>}
       <form className="panel" onSubmit={onSubmit}>
         <div className="field">
